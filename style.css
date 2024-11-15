@@ -37,10 +37,6 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-}
-
 header nav a {
     color: white;
     text-decoration: none;
@@ -98,6 +94,14 @@ header nav a:hover {
     padding: 10px;
 }
 
+.details h2,
+.details p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 /* Video sekcija */
 .video {
     text-align: center;
@@ -122,16 +126,12 @@ header nav a:hover {
     height: 100%;
 }
 
-
 /* Generalno pravilo za slike i video */
 .details img,
 .video-container {
     max-width: 90%;
-    /* Ograničava širinu na 90% ekrana */
     height: auto;
-    /* Održava proporcije */
     margin: 0 auto;
-    /* Centriranje */
     display: block;
 }
 
@@ -139,10 +139,7 @@ header nav a:hover {
 .details,
 .video {
     margin-bottom: 2rem;
-    /* Razmak između sekcija */
 }
-
-
 
 /* Footer */
 footer {
@@ -151,5 +148,3 @@ footer {
     background-color: var(--secondary-color);
     color: white;
 }
-
-
