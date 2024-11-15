@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Galerija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Origami Galerija</h1>
+            <ul>
+                <li><a href="#crane">Ždral</a></li>
+                <li><a href="#flower">Cvet</a></li>
+                <li><a href="#footer">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="card" id="crane">
+                <img src="images/origami-crane.jpg" alt="Origami Crane">
+                <h2>Origami Ždral</h2>
+                <p>Kratak opis: Klasičan simbol mira i sreće.</p>
+                <a href="origami-crane.html#crane">Pogledaj više</a>
+            </div>
+            <div class="card" id="flower">
+                <img src="images/origami-flower.jpg" alt="Origami Flower">
+                <h2>Origami Cvet</h2>
+                <p>Kratak opis: Šareni dodatak za svaki prostor.</p>
+                <a href="origami-flower.html#flower">Pogledaj više</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; <span id="current-year"></span> Origami Galerija. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        // Dinamički prikaz godine
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

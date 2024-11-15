@@ -1,0 +1,155 @@
+/* Vesela paleta boja */
+:root {
+    --primary-color: #ffbf00;
+    /* Zlato žuta */
+    --secondary-color: #ff6347;
+    /* Svetla crvena */
+    --accent-color: #87ceeb;
+    /* Nebesko plava */
+    --text-color: #333;
+    --bg-color: #fff7e6;
+}
+
+/* Globalni stilovi */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navigacija */
+header nav {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Galerija */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Detalji */
+.details img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+/* Video sekcija */
+.video {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Generalno pravilo za slike i video */
+.details img,
+.video-container {
+    max-width: 90%;
+    /* Ograničava širinu na 90% ekrana */
+    height: auto;
+    /* Održava proporcije */
+    margin: 0 auto;
+    /* Centriranje */
+    display: block;
+}
+
+/* Odvajanje sekcija */
+.details,
+.video {
+    margin-bottom: 2rem;
+    /* Razmak između sekcija */
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+

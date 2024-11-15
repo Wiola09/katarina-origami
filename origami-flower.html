@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalji Origamija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Origami Galerija</h1>
+            <ul>
+                <li><a href="index.html#crane">Ždral</a></li>
+                <li><a href="index.html#flower">Cvet</a></li>
+                <li><a href="index.html#footer">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="details">
+            <img src="images/origami-flower.jpg" alt="Origami Crane">
+            <h2>Origami Cvet</h2>
+            <p>Kratak opis: Prelep origami cvet koji dodaje boju svakom prostoru. Pravljenje je izazovno, ali vredno truda.</p>
+            <p>Utisci: Idealno za poklon ili dekoraciju!</p>
+        </section>
+
+        <section class="video">
+            <h2>Pogledajte naš video tutorijal</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/PmeCFYMluas" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>  
+
+    <footer id="footer">
+        <p>&copy; <span id="current-year"></span> Origami Galerija. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        // Dinamički prikaz godine
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
